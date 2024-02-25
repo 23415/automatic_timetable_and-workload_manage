@@ -2,6 +2,7 @@ import 'package:college_project/screens/hod_role/subject_alloc/allocate_subject.
 import 'package:college_project/screens/hod_role/subject_alloc/view_alloted_subject.dart';
 import 'package:college_project/screens/hod_role/time-table/time_table_generate.dart';
 import 'package:college_project/screens/hod_role/time-table/time_table_page.dart';
+import 'package:college_project/screens/hod_role/workload_manage/manage_workload.dart';
 import 'package:flutter/material.dart';
 
 class HodHomePage extends StatelessWidget {
@@ -23,7 +24,6 @@ class HodHomePage extends StatelessWidget {
           Row(
             children: [
               Spacer(
-                flex: 1,
               ),
               GestureDetector(
                 onTap: (){
@@ -100,7 +100,9 @@ class HodHomePage extends StatelessWidget {
                 flex: 1,
               ),
               GestureDetector(
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => ManageWorkLoad()));
+                },
                 child: Container(
                   height: 300,
                   width: 300,
