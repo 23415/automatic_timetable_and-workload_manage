@@ -62,7 +62,7 @@ class HodLoginPage extends StatelessWidget {
                 width: 200,
                 height: 50,
                 child: ElevatedButton(onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => HodHomePage()));
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HodHomePage()));
                 }, child: Text("Login")),
               ),
               Spacer(),
